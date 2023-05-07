@@ -1,0 +1,379 @@
+:root {
+--light-bg: #FFFFFF;
+--light-text: #000000;
+--light-hl: blue;
+--dark-bg: #1E1E1E;
+--dark-text: #E0E0E0;
+--dark-hl: #99D1E9;
+}
+
+html {
+margin: 25px;
+padding: 0px;
+padding-bottom: 50px;
+}
+
+@font-face {
+font-family: 'SpaceGrotesk';
+src: url('../fonts/SpaceGrotesk/SpaceGrotesk-Light.woff2') format('woff2'), /* Super Modern Browsers */
+     url('../fonts/SpaceGrotesk/SpaceGrotesk-Light.woff') format('woff'), /* Pretty Modern Browsers */
+     url('../fonts/SpaceGrotesk/SpaceGrotesk-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'SpaceGrotesk';
+src: url('../fonts/SpaceGrotesk/SpaceGrotesk-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+     url('../fonts/SpaceGrotesk/SpaceGrotesk-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+     url('../fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+font-weight: bold;
+font-style: normal;
+}
+
+body {
+margin: auto;
+padding: 0px;
+max-width: 600px;
+font-family: SpaceGrotesk;
+}
+
+p, a, h1, h2, h3, h4, h5, b, i, u, s, li {
+color: var(--light-text);
+}
+
+h1 {
+font-size: 24pt;
+margin: 0px;
+padding: 0px;
+font-style: bold;
+}
+
+h2, h3, h4, h5 {
+margin: 0px;
+padding: 0px;
+font-style: bold;
+}
+
+h2 {
+font-size: 18pt;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+h3 {
+font-size: 16pt;
+padding-top: 2.5px;
+padding-bottom: 2.5px;
+}
+
+h4 {
+font-size: 14pt;
+padding-top: 2.5px;
+padding-bottom: 2.5px;
+font-weight: normal;
+}
+
+h5 {
+font-family: 12pt;
+}
+
+p {
+font-size: 12pt;
+line-height: 16pt;
+text-align: left;
+margin: 0px;
+padding: 0px;
+margin-top: 12px;
+margin-bottom: 12px;
+}
+
+a {
+text-decoration: underline;
+}
+
+a:hover {
+color: var(--light-hl);
+-webkit-transition: color 0.5s;
+-o-transition: color 0.5s;
+transition: color 0.5s;
+}
+
+u {
+text-decoration-color: var(--light-text);
+}
+
+s {
+text-decoration-color: var(--light-text);
+}
+
+mark {
+background-color: var(--light-hl);
+}
+
+blockquote {
+margin: auto;
+margin-top: 14px;
+margin-bottom: 14px;
+width: 90%;
+border-left: 1px solid var(--light-text);
+padding: 10px;
+}
+
+blockquote p {
+margin: auto;
+font-style: italic;
+}
+
+blockquote b {
+font-style: normal;
+}
+
+ol {
+list-style-type: decimal-leading-zero;
+list-style-position: inside;
+margin: 0px;
+padding: 0px;
+padding-left: 10px;
+margin-top: 14px;
+margin-bottom: 14px;
+}
+
+ul {
+margin: 0px;
+padding: 0px;
+padding-left: 10px;
+list-style-position: inside;
+margin-top: 14px;
+margin-bottom: 14px;
+}
+
+hr {
+border-width: 1px solid;
+margin: 0px;
+padding: 0px;
+margin-top: 14px;
+margin-bottom: 14px;
+}
+
+img {
+width: 100%;
+margin: 0px;
+padding: 0px;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+.tab {
+margin-left: 20px;
+}
+
+.quoteital {
+margin-right: 4pt;
+}
+
+#topheader {
+margin: 0px;
+padding: 0px;
+padding-bottom: 20px;
+}
+
+#topheader a {
+text-decoration: none;
+}
+
+#topheader a:hover {
+color: var(--light-text);
+}
+
+.listlink {
+line-height: 150%;
+}
+
+.homepagelist {
+margin-top: 14px;
+}
+
+.date p {
+position: relative;
+top: -10px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+
+/* Form  */
+
+.form-container {
+width: 300px;
+display: flex;
+}
+
+.form-container input {
+margin-bottom: 5px;
+margin-top: 5px;
+background-color: var(--light-bg);
+}
+
+#form-name {
+width: 100%;
+}
+
+#form-email {
+width: 100%;
+}
+
+#form-subject {
+width: 100%;
+}
+
+#form-body {
+width: 100%;
+padding-bottom: 87px;
+}
+
+::placeholder {
+font-family: SpaceGrotesk;
+font-size: 10pt;
+color: var(--light-text);
+}
+
+input[type=text], input[type=email] {
+font-family: SpaceGrotesk;
+font-size: 10pt;
+color: var(--light-text);
+border: solid 1px var(--light-text);
+border-radius: 0px;
+padding-left: 5px;
+}
+
+button {
+font-family: SpaceGrotesk;
+font-size: 10pt;
+color: var(--light-text);
+background-color: var(--light-bg);
+border: solid 1px var(--light-text);
+border-radius: 0px;
+cursor: pointer;
+margin: 0px;
+margin-top: 5px;
+}
+
+button:hover {
+	background-color: var(--dark-bg);
+	color: var(--light-bg);
+	border: solid 1px var(--dark-hl);
+	-webkit-transition: color 0.5s;
+		-o-transition: color 0.5s;
+		transition: color 0.5s;
+	-webkit-transition: background-color 0.5s;
+		-o-transition: background-color 0.5s;
+		transition: background-color 0.5s;
+	-webkit-transition: border 0.4s;
+		-o-transition: border 0.4s;
+		transition: border 0.4s;
+}
+
+button:active {
+	background-color: var(--dark-hl);
+	color: var(--light-text);
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 425px) {
+
+	blockquote p {
+		text-align: left;
+	}
+
+	.form-container {
+		width: 300px;
+	}
+}
+
+/* Light Mode*/
+
+@media (prefers-color-scheme: light) {
+
+	a {
+		-webkit-text-decoration-color: var(--light-hl);
+		text-decoration-color: var(--light-hl);
+	}
+
+	::-moz-selection {
+		color: var(--light-bg);
+		background-color: var(--light-hl);
+	}
+
+	::selection {
+		color: var(--light-bg);
+		background-color: var(--light-hl);
+	}
+}
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+	p, a, h1, h2, h3, h4, h5, b, i, u, s, li {
+		color: var(--dark-text);
+		-webkit-text-decoration-color: var(--dark-hl);
+		text-decoration-color: var(--dark-hl);
+	}
+
+	html {
+		background-color: var(--dark-bg);
+	}
+
+	u {
+		text-decoration-color: var(--dark-text);
+	}
+
+	s {
+		text-decoration-color: var(--dark-text);
+	}
+
+	blockquote {
+		border-color: var(--dark-text);
+	}
+
+	mark {
+		background-color: var(--dark-hl);
+		color: var(--dark-bg);
+	}
+
+	#topheader a {
+		text-decoration: none;
+	}
+
+	#topheader a:hover {
+		color: var(--dark-text);
+	}
+
+	a:hover {
+		color: var(--dark-hl);
+		-webkit-transition: color 0.5s;
+		-o-transition: color 0.5s;
+		transition: color 0.5s;
+	}
+
+	::-moz-selection {
+		color: var(--dark-bg);
+		background-color: var(--dark-hl);
+	}
+
+	::selection {
+		color: var(--dark-bg);
+		background-color: var(--dark-hl);
+	}
+
+	/* Form */
+
+	input[type=text], input[type=email] {
+		border: solid 1px var(--dark-bg);
+	}
+
+	button {
+		border: solid 1px var(--dark-bg);
+	}
+
+}
